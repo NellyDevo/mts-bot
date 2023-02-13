@@ -1,0 +1,1803 @@
+{
+  "mod": {
+    "name": "Testers Mod",
+    "version": "1.2.0",
+    "authors": ["Lord Raptor Jesus"],
+    "credits": "Basemod, ModTheSpire, StS Discord, Valve",
+    "description": "Welcome to the Aperture Science Cooperative Spire-Slaying Initiative, the latest and greatest in Aperture Science Testing Tracks, designed to simulate the various different floors of the Spire. Harness the power of cutting-edge Aperture technology and pit your wits against the toughest the Spire has to offer, all from within the safety of your own local Aperture Science Laboratory.\n        \nIncludes:\n        85+ cards\n        12 character-exclusive relics\n        5 relics available to all characters\n        5 potions\n        5 events\n        A new act 4 boss\n        And a partridge in a pear tree.\n        \n\n        \nContent for all characters can be toggled in the mod settings.",
+    "mts_version": "3.8.0",
+    "sts_version": "01-23-2019",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Apple Core",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach an thetesters:Apple_Core.\nExhaust."
+    },
+    {
+      "name": "Apple Core+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach two thetesters:Apple_Cores.\nExhaust."
+    },
+    {
+      "name": "Blank Core",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach a thetesters:Blank_Core.\nExhaust."
+    },
+    {
+      "name": "Blank Core+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach two thetesters:Blank_Cores.\nExhaust."
+    },
+    {
+      "name": "Blue Core",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach a thetesters:Blue_Core.\nExhaust."
+    },
+    {
+      "name": "Blue Core+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach a thetesters:Blue_Core."
+    },
+    {
+      "name": "Defective Turret",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Exhaust."
+    },
+    {
+      "name": "Defective Turret+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E] [E] .\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Emotional Wound",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Status",
+      "cost": "",
+      "description": "Unplayable."
+    },
+    {
+      "name": "Energy Core",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach an thetesters:Energy_Core."
+    },
+    {
+      "name": "Energy Core+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach an thetesters:Energy_Core."
+    },
+    {
+      "name": "Hyperball",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 5 damage to ALL enemies.\nDouble this card's damage this combat.\nthetesters:Splatter."
+    },
+    {
+      "name": "Hyperball+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage to ALL enemies.\nDouble this card's damage this combat.\nthetesters:Splatter."
+    },
+    {
+      "name": "Orange Core",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach an thetesters:Orange_Core.\nExhaust."
+    },
+    {
+      "name": "Orange Core+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach an thetesters:Orange_Core."
+    },
+    {
+      "name": "Research Cores",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "thetesters:Attach 2 thetesters:Energy_Cores."
+    },
+    {
+      "name": "Research Cores+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "thetesters:Attach 2 thetesters:Energy_Cores."
+    },
+    {
+      "name": "Research Gels",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 50 thetesters:Bounce_Gel and thetesters:Speed_Gel."
+    },
+    {
+      "name": "Research Gels+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Gain 50 thetesters:Bounce_Gel and thetesters:Speed_Gel."
+    },
+    {
+      "name": "Research Turrets",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Add random Turret cards into your hand until your hand is full. They cost 0 this combat."
+    },
+    {
+      "name": "Research Turrets+",
+      "color": "Colorless",
+      "rarity": "Special",
+      "type": "Power",
+      "cost": "",
+      "description": "Add random Turret cards into your hand until your hand is full. They cost 0 this combat."
+    },
+    {
+      "name": "Moron Core",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nWhen you draw this card, thetesters:Attach a thetesters:Moron_Core.\nExhaust."
+    },
+    {
+      "name": "The Lie",
+      "color": "Curse",
+      "rarity": "Curse",
+      "type": "Curse",
+      "cost": "",
+      "description": "Unplayable.\nEthereal.\nWhen you draw this card, gain 2 Weak and 2 Frail."
+    },
+    {
+      "name": "Better than One",
+      "color": "Testers_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach a thetesters:Blue_Core and an thetesters:Orange_Core.\nExhaust."
+    },
+    {
+      "name": "Better than One+",
+      "color": "Testers_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "thetesters:Attach a thetesters:Blue_Core and an thetesters:Orange_Core.\nExhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Testers_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Testers_orange_color",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block."
+    },
+    {
+      "name": "Gel Bomb",
+      "color": "Testers_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage.\nthetesters:Splatter twice."
+    },
+    {
+      "name": "Gel Bomb+",
+      "color": "Testers_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 damage.\nthetesters:Splatter 3 times."
+    },
+    {
+      "name": "Strike",
+      "color": "Testers_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Testers_orange_color",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Ammunition",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach a thetesters:Blank_Core in all your empty Orb slots.\nExhaust."
+    },
+    {
+      "name": "Ammunition+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain an Orb slot.\nthetesters:Attach a thetesters:Blank_Core in all your empty Orb slots.\nExhaust."
+    },
+    {
+      "name": "Block with Blocks",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd a Frankenturret to your hand.\nExhaustive 2."
+    },
+    {
+      "name": "Block with Blocks+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nAdd 2 Frankenturrets to your hand.\nExhaustive 2."
+    },
+    {
+      "name": "Cannonball",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thetesters:Detach your next Core. Deal 15 damage.\nUnplayable if you have no Cores."
+    },
+    {
+      "name": "Cannonball+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Evoke your next Core. Deal 15 damage.\nUnplayable if you have no Cores."
+    },
+    {
+      "name": "Chair Slam",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nApply 1 Vulnerable."
+    },
+    {
+      "name": "Chair Slam+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nApply 2 Vulnerable."
+    },
+    {
+      "name": "Co-Op Crush",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nIncrease this card's damage by 2 for every Turret in your draw and discard piles."
+    },
+    {
+      "name": "Co-Op Crush+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nIncrease this card's damage by 3 for every Turret in your draw and discard piles."
+    },
+    {
+      "name": "Cover Weaknesses",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nGain 5 additional Block for every Weak, Vulnerable or Frail you have."
+    },
+    {
+      "name": "Cover Weaknesses+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nGain 6 additional Block for every Weak, Vulnerable or Frail you have."
+    },
+    {
+      "name": "Deadly Laser",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies."
+    },
+    {
+      "name": "Deadly Laser+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage to ALL enemies."
+    },
+    {
+      "name": "Frankenturret",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, gain 2 Block."
+    },
+    {
+      "name": "Frankenturret+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, gain 4 Block."
+    },
+    {
+      "name": "Garbage Dump",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage.\nDeal 4 damage again for every Weak, Vulnerable or Frail you have."
+    },
+    {
+      "name": "Garbage Dump+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nDeal 5 damage again for every Weak, Vulnerable or Frail you have."
+    },
+    {
+      "name": "Gel Spew",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 8 Block.\nthetesters:Splatter 3 times."
+    },
+    {
+      "name": "Gel Spew+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Block.\nthetesters:Splatter 4 times."
+    },
+    {
+      "name": "Hard Light Blade",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 damage."
+    },
+    {
+      "name": "Hard Light Blade+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage."
+    },
+    {
+      "name": "Hard Light Wall",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block."
+    },
+    {
+      "name": "Hard Light Wall+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block."
+    },
+    {
+      "name": "Momentum Strike",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to your thetesters:Speed_Gel.\nthetesters:Splatter."
+    },
+    {
+      "name": "Momentum Strike+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal damage equal to double your thetesters:Speed_Gel.\nthetesters:Splatter."
+    },
+    {
+      "name": "Propulsion Pipe",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 thetesters:Speed_Gel.\nExhaust."
+    },
+    {
+      "name": "Propulsion Pipe+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 thetesters:Speed_Gel.\nExhaust."
+    },
+    {
+      "name": "Quick Charge",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage to ALL enemies.\nthetesters:Splatter."
+    },
+    {
+      "name": "Quick Charge+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage to ALL enemies.\nthetesters:Splatter."
+    },
+    {
+      "name": "Recharge",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E].\nthetesters:Drain 7 to gain an additional [E] [E]."
+    },
+    {
+      "name": "Recharge+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain [E].\nthetesters:Drain 5 to gain an additional [E] [E]."
+    },
+    {
+      "name": "Repulsion Pipe",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 thetesters:Bounce_Gel.\nExhaust."
+    },
+    {
+      "name": "Repulsion Pipe+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 8 thetesters:Bounce_Gel.\nExhaust."
+    },
+    {
+      "name": "Safety Cube Bowling",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage to ALL enemies.\nAdd 2 Defective Turrets into your hand."
+    },
+    {
+      "name": "Safety Cube Bowling+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 15 damage to ALL enemies.\nAdd 2 Defective Turrets into your hand."
+    },
+    {
+      "name": "Say 'Apple'",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle an thetesters:Apple_Core into your draw pile.\nDraw a card."
+    },
+    {
+      "name": "Say 'Apple'+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Shuffle an thetesters:Apple_Core into your draw pile.\nDraw 2 cards."
+    },
+    {
+      "name": "Sentry Turret",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal 3 damage to a random enemy."
+    },
+    {
+      "name": "Sentry Turret+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal 3 damage to a random enemy twice."
+    },
+    {
+      "name": "Spring Kick",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain Block equal to your thetesters:Bounce_Gel.\nthetesters:Splatter."
+    },
+    {
+      "name": "Spring Kick+",
+      "color": "Testers_orange_color",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nGain Block equal to double your thetesters:Bounce_Gel.\nthetesters:Splatter."
+    },
+    {
+      "name": "Adventure Core",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach an thetesters:Adventure_Core.\nGain 2 thetesters:Toughness."
+    },
+    {
+      "name": "Adventure Core+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach an thetesters:Adventure_Core.\nGain 3 thetesters:Toughness."
+    },
+    {
+      "name": "Bird! Bird! Bird!",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 6 damage.\nPut this card on top of your draw pile.\nExhaustive 3."
+    },
+    {
+      "name": "Bird! Bird! Bird!+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Deal 9 damage.\nPut this card on top of your draw pile.\nExhaustive 3."
+    },
+    {
+      "name": "Bombardment",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nthetesters:Drain 12 thetesters:Speed_Gel to deal 6 damage to ALL enemies 3 times and thetesters:Splatter 3 times."
+    },
+    {
+      "name": "Bombardment+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nthetesters:Drain 8 thetesters:Speed_Gel to deal 6 damage to ALL enemies 3 times and thetesters:Splatter 3 times."
+    },
+    {
+      "name": "Combustible Lemon",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 14 damage. Shuffle this card into your draw pile.\nAt the end of your turn, gain 1 Weak and Frail."
+    },
+    {
+      "name": "Combustible Lemon+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 18 damage. Shuffle this card into your draw pile.\nAt the end of your turn, gain 1 Weak and Frail."
+    },
+    {
+      "name": "Conversion Gel",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Swap your thetesters:Bounce_Gel with your thetesters:Speed_Gel.\nGain 10 Block.\nExhaust."
+    },
+    {
+      "name": "Conversion Gel+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Swap your thetesters:Bounce_Gel with your thetesters:Speed_Gel.\nGain 10 Block."
+    },
+    {
+      "name": "Core Gamble",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach a random Core."
+    },
+    {
+      "name": "Core Gamble+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain an Orb Slot.\nthetesters:Attach a random Core.\nExhaust."
+    },
+    {
+      "name": "Core Scatter",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thetesters:Detach all your Cores. Deal 4 damage to ALL enemies for each Core Detached."
+    },
+    {
+      "name": "Core Scatter+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "thetesters:Detach all your Cores. Deal 6 damage to ALL enemies for each Core Detached."
+    },
+    {
+      "name": "Core Shield",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block for every Core you have. Whenever you receive unblocked attack damage this turn, lose an Orb Slot."
+    },
+    {
+      "name": "Core Shield+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 10 Block for every Core you have. Whenever you receive unblocked attack damage this turn, lose an Orb Slot."
+    },
+    {
+      "name": "Crazy Core",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach a thetesters:Crazy_Core.\nExhaust."
+    },
+    {
+      "name": "Crazy Core+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach a thetesters:Crazy_Core."
+    },
+    {
+      "name": "Crusher",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 16 damage."
+    },
+    {
+      "name": "Crusher+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 24 damage."
+    },
+    {
+      "name": "Curiosity Core",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach a thetesters:Curiosity_Core.\nExhaust."
+    },
+    {
+      "name": "Curiosity Core+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nthetesters:Attach a thetesters:Curiosity_Core.\nExhaust."
+    },
+    {
+      "name": "Double Down",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nthetesters:Drain 8 thetesters:Bounce_Gel to double your Block."
+    },
+    {
+      "name": "Double Down+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 Block.\nthetesters:Drain 5 thetesters:Bounce_Gel to double your Block."
+    },
+    {
+      "name": "Endless Rebound",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nthetesters:Drain 5 thetesters:Bounce_Gel to keep your Block at the start of your next turn."
+    },
+    {
+      "name": "Endless Rebound+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 5 Block.\nthetesters:Drain 5 thetesters:Bounce_Gel to keep your Block at the start of your next turn."
+    },
+    {
+      "name": "Energy Burst",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4X thetesters:Bounce_Gel and thetesters:Speed_Gel.\nthetesters:Splatter X times.\nExhaust."
+    },
+    {
+      "name": "Energy Burst+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Gain 4X+4 thetesters:Bounce_Gel and thetesters:Speed_Gel.\nthetesters:Splatter X+1 times.\nExhaust."
+    },
+    {
+      "name": "Fact Core",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nthetesters:Attach a thetesters:Fact_Core."
+    },
+    {
+      "name": "Fact Core+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 16 Block.\nthetesters:Attach a thetesters:Fact_Core."
+    },
+    {
+      "name": "Gel Altar",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 thetesters:Speed_Gel.\nthetesters:Drain 25 thetesters:Speed_Gel to gain 2 Ritual and Exhaust."
+    },
+    {
+      "name": "Gel Altar+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 thetesters:Speed_Gel.\nthetesters:Drain 25 thetesters:Speed_Gel to gain 3 Ritual and Exhaust."
+    },
+    {
+      "name": "Gel Core",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach a thetesters:Gel_Core."
+    },
+    {
+      "name": "Gel Core+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach a thetesters:Gel_Core+."
+    },
+    {
+      "name": "Hover Turret",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal 4 damage to ALL enemies."
+    },
+    {
+      "name": "Hover Turret+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal 8 damage to ALL enemies."
+    },
+    {
+      "name": "Ingest Moon Rocks",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Strength and Dexterity.\nGain 2 Frail and Weak."
+    },
+    {
+      "name": "Ingest Moon Rocks+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 2 Strength and Dexterity.\nGain 2 Frail and Weak."
+    },
+    {
+      "name": "Management Rail",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw X Core cards from your draw pile. They cost X less this turn.\nExhaust."
+    },
+    {
+      "name": "Management Rail+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Draw X+1 Core cards from your draw pile. They cost X+1 less this turn.\nExhaust."
+    },
+    {
+      "name": "Mass Production",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Choose a Turret card in your hand.\nAt the start of your turn, add a copy of it to your hand."
+    },
+    {
+      "name": "Mass Production+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Choose a Turret card in your hand.\nAt the start of your turn, add a copy of it to your hand."
+    },
+    {
+      "name": "Oracle Turret",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 3 cards.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Oracle Turret+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Scry 5 cards.\nDraw a card.\nExhaust."
+    },
+    {
+      "name": "Prima Donna Turret",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, add a random 1-energy Turret card into your hand."
+    },
+    {
+      "name": "Prima Donna Turret+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the start of your turn, add a random 1-energy Turret card into your hand."
+    },
+    {
+      "name": "Propulsion Blades",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Drain half of your thetesters:Speed_Gel.\nGain 1 Strength for every 3 Gel drained.\nExhaust."
+    },
+    {
+      "name": "Propulsion Blades+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Drain half of your thetesters:Speed_Gel.\nGain 1 Strength for every 2 Gel drained.\nExhaust."
+    },
+    {
+      "name": "Pump Gel",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 thetesters:Bounce_Gel and thetesters:Speed_Gel."
+    },
+    {
+      "name": "Pump Gel+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 8 thetesters:Bounce_Gel and thetesters:Speed_Gel."
+    },
+    {
+      "name": "Quick Draw",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 1 card. thetesters:Drain 5 thetesters:Speed_Gel to draw 2 additional cards."
+    },
+    {
+      "name": "Quick Draw+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 1 card. thetesters:Drain 5 thetesters:Speed_Gel to draw 2 additional cards."
+    },
+    {
+      "name": "Rapid Strikes",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage for every 5 thetesters:Speed_Gel you have.\nthetesters:Splatter."
+    },
+    {
+      "name": "Rapid Strikes+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage for every 4 thetesters:Speed_Gel you have.\nthetesters:Splatter."
+    },
+    {
+      "name": "Reinforce Armor",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Drain 5 thetesters:Bounce_Gel to gain 6 thetesters:Toughness. If you have 15 or more thetesters:Bounce_Gel, gain 6 Plated Armor instead."
+    },
+    {
+      "name": "Reinforce Armor+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Drain 5 thetesters:Bounce_Gel to gain 8 thetesters:Toughness. If you have 15 or more thetesters:Bounce_Gel, gain 8 Plated Armor instead."
+    },
+    {
+      "name": "Repulsion Armor",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Drain half of your thetesters:Bounce_Gel.\nGain 1 Dexterity for every 3 Gel drained.\nExhaust."
+    },
+    {
+      "name": "Repulsion Armor+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Drain half of your thetesters:Bounce_Gel.\nGain 1 Dexterity for every 2 Gel drained.\nExhaust."
+    },
+    {
+      "name": "Rocket Turret",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of your turn, deal 10 damage to a random enemy."
+    },
+    {
+      "name": "Rocket Turret+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal 10 damage to a random enemy."
+    },
+    {
+      "name": "Sharpen Blades",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Drain 5 thetesters:Speed_Gel to gain 5 Vigor. If you have 15 or more thetesters:Speed_Gel, gain 5 Strength instead."
+    },
+    {
+      "name": "Sharpen Blades+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Drain 5 thetesters:Speed_Gel to gain 7 Vigor. If you have 15 or more thetesters:Speed_Gel, gain 7 Strength instead."
+    },
+    {
+      "name": "Space Core",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nthetesters:Attach a thetesters:Space_Core."
+    },
+    {
+      "name": "Space Core+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Ethereal.\nthetesters:Attach a thetesters:Space_Core."
+    },
+    {
+      "name": "Surprise Attack",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nDeal 7 damage again if this is the first attack played this turn."
+    },
+    {
+      "name": "Surprise Attack+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nDeal 10 damage again if this is the first attack played this turn."
+    },
+    {
+      "name": "Turlet Strike",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 damage for each Turret played this combat."
+    },
+    {
+      "name": "Turlet Strike+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage for each Turret played this combat."
+    },
+    {
+      "name": "Turn the Tables",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all your Weak and Frail. Gain that much Strength and Dexterity.\nExhaust."
+    },
+    {
+      "name": "Turn the Tables+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Remove all your Weak and Frail. Gain that much Strength and Dexterity.\nExhaust."
+    },
+    {
+      "name": "Turret Opera",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 2 random Turret cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Turret Opera+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Add 3 random Turret cards to your hand.\nExhaust."
+    },
+    {
+      "name": "Walking Turret",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "At the end of your turn, deal 5 damage to the thetesters:Targeted enemy."
+    },
+    {
+      "name": "Walking Turret+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Shuffle a copy of this card into your draw pile.\nAt the end of your turn, deal 5 damage to the thetesters:Targeted enemy."
+    },
+    {
+      "name": "Warp Cards",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 2 cards from your discard pile into your hand."
+    },
+    {
+      "name": "Warp Cards+",
+      "color": "Testers_orange_color",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Put 2 cards from your draw pile into your hand."
+    },
+    {
+      "name": "Anger Core",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Attach an thetesters:Anger_Core."
+    },
+    {
+      "name": "Anger Core+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nthetesters:Attach an thetesters:Anger_Core."
+    },
+    {
+      "name": "Animal King Turret",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "The effects of all your Turrets are doubled. (Does not stack)"
+    },
+    {
+      "name": "Animal King Turret+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Innate.\nThe effects of all your Turrets are doubled. (Does not stack)"
+    },
+    {
+      "name": "Aperture Form",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, shuffle a random Core card into your draw pile. Give the card \" thetesters:Experiment \"."
+    },
+    {
+      "name": "Aperture Form+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "At the start of your turn, shuffle 2 random Core cards into your draw pile. Give the cards \" thetesters:Experiment \"."
+    },
+    {
+      "name": "Cleansing Gel",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all Bouncy and Slippery from ALL enemies. Gain thetesters:Bounce_Gel and thetesters:Speed_Gel equal to half the amount removed.\nExhaust."
+    },
+    {
+      "name": "Cleansing Gel+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Remove all Bouncy and Slippery from ALL enemies. Gain thetesters:Bounce_Gel and thetesters:Speed_Gel equal to the amount removed.\nExhaust."
+    },
+    {
+      "name": "Core Barrage",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Remove all your Cores. Deal 10 damage for each Core removed.\nExhaust."
+    },
+    {
+      "name": "Core Barrage+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Evoke all your Cores. Deal 10 damage for each Core Evoked.\nExhaust."
+    },
+    {
+      "name": "Cube Slide",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage.\nthetesters:Drain 9 thetesters:Speed_Gel to deal 5 damage 4 additional times. thetesters:Splatter 3 times."
+    },
+    {
+      "name": "Cube Slide+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 damage.\nthetesters:Drain 9 thetesters:Speed_Gel to deal 6 damage 4 additional times. thetesters:Splatter 3 times."
+    },
+    {
+      "name": "Do Some Science",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "4",
+      "description": "Choose one:\nGain 50 thetesters:Bounce_Gel and thetesters:Speed_Gel, thetesters:Attach 2 thetesters:Energy_Cores, or fill your hand with free Turret cards.\nExhaust."
+    },
+    {
+      "name": "Do Some Science+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Choose one:\nGain 50 thetesters:Bounce_Gel and thetesters:Speed_Gel, thetesters:Attach 2 thetesters:Energy_Cores, or fill your hand with free Turret cards.\nExhaust."
+    },
+    {
+      "name": "Emergency Repairs",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 1 Regen. Permanently increase this card's Regen by 1.\nExhaust."
+    },
+    {
+      "name": "Emergency Repairs+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Regen. Permanently increase this card's Regen by 1.\nExhaust."
+    },
+    {
+      "name": "Gel Sticky Bombs",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage.\nthetesters:Drain 10 to apply thetesters:Splatter_Bombs and Exhaust."
+    },
+    {
+      "name": "Gel Sticky Bombs+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 10 damage.\nthetesters:Drain 7 to apply thetesters:Splatter_Bombs and Exhaust."
+    },
+    {
+      "name": "Incinerate",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage twice."
+    },
+    {
+      "name": "Incinerate+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 damage 3 times."
+    },
+    {
+      "name": "Infinite Freefall",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 4 thetesters:Bounce_Gel and thetesters:Speed_Gel."
+    },
+    {
+      "name": "Infinite Freefall+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of your turn, gain 8 thetesters:Bounce_Gel and thetesters:Speed_Gel."
+    },
+    {
+      "name": "Mix the Gels",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thetesters:Drain 10 to add a Hyperball into your hand.\nExhaust."
+    },
+    {
+      "name": "Mix the Gels+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "thetesters:Drain 7 to add a Hyperball into your hand.\nExhaust."
+    },
+    {
+      "name": "Party Escort Position",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "End your turn. At the start of your next turn, gain 3 [E] and draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Party Escort Position+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "End your turn. At the start of your next turn, gain 3 [E] and draw 3 cards.\nExhaust."
+    },
+    {
+      "name": "Portal to the Moon",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Set the HP of ALL enemies with 40 or less HP to 0.\nExhaust."
+    },
+    {
+      "name": "Portal to the Moon+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Set the HP of ALL enemies with 50 or less HP to 0.\nExhaust."
+    },
+    {
+      "name": "Production Line",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw Turret cards from your draw pile until your hand is full.\nExhaust."
+    },
+    {
+      "name": "Production Line+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw Turret cards from your draw pile until your hand is full.\nExhaust."
+    },
+    {
+      "name": "Rupture Pipes",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 damage. thetesters:Splatter 4 times without losing Gel."
+    },
+    {
+      "name": "Rupture Pipes+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 14 damage. thetesters:Splatter 6 times without losing Gel."
+    },
+    {
+      "name": "The Cake",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 10 HP.\nShuffle The Lie into your discard pile.\nExhaust."
+    },
+    {
+      "name": "The Cake+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal 15 HP.\nShuffle The Lie into your discard pile.\nExhaust."
+    },
+    {
+      "name": "Think with Portals",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Ethereal.\nEscape from non-boss combat.\nReceive combat rewards as normal.\nstslib:Fleeting."
+    },
+    {
+      "name": "Think with Portals+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "3",
+      "description": "Innate.\nEthereal.\nEscape from non-boss combat.\nReceive combat rewards as normal.\nstslib:Fleeting."
+    },
+    {
+      "name": "Void Storages",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Splatter half of your thetesters:Bounce_Gel and thetesters:Speed_Gel.\nExhaust."
+    },
+    {
+      "name": "Void Storages+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "1",
+      "description": "thetesters:Splatter ALL of your thetesters:Bounce_Gel and thetesters:Speed_Gel.\nExhaust."
+    },
+    {
+      "name": "Warp Borealis",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 50 damage to ALL enemies.\nShuffle this card into your draw pile."
+    },
+    {
+      "name": "Warp Borealis+",
+      "color": "Testers_orange_color",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 70 damage to ALL enemies.\nShuffle this card into your draw pile."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Gel Canisters",
+      "tier": "Starter",
+      "pool": "Testers_orange_color",
+      "description": "Start each combat with 5 thetesters:Bounce_Gel and 5 thetesters:Speed_Gel.",
+      "flavorText": "Two large barrels of gel, labeled \u201CDO NOT MIX\u201D."
+    },
+    {
+      "name": "Extension Cord",
+      "tier": "Common",
+      "pool": "Testers_orange_color",
+      "description": "Start each combat with 2 additional Orb Slots.",
+      "flavorText": "Now you can attach cores up to 5 feet away!"
+    },
+    {
+      "name": "Extra Ammo",
+      "tier": "Common",
+      "pool": "Testers_orange_color",
+      "description": "At the start of each combat, thetesters:Attach two thetesters:Blank_Cores.",
+      "flavorText": "The cores don't turn on, but they make for great projectiles to throw at enemies."
+    },
+    {
+      "name": "Potato Battery",
+      "tier": "Common",
+      "pool": "",
+      "description": "Each combat, draw 1 card at the start of each turn until you play 4 cards in a single turn.",
+      "flavorText": "A small battery to boost your processing power. Short circuits when overexerted."
+    },
+    {
+      "name": "Broken Radio",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "At the start of your 3rd turn, draw 2 cards and gain [E] .",
+      "flavorText": "The static is occasionally interrupted by a deep voice counting to three."
+    },
+    {
+      "name": "Turret Redemption Line",
+      "tier": "Uncommon",
+      "pool": "Testers_orange_color",
+      "description": "Defective Turrets now give [E] [E] and draw a card when played.",
+      "flavorText": "Please do not engage with turrets heading towards redemption."
+    },
+    {
+      "name": "Companion Cube",
+      "tier": "Rare",
+      "pool": "Testers_orange_color",
+      "description": "Whenever you thetesters:Splatter, heal 1 HP.",
+      "flavorText": "Your new best friend."
+    },
+    {
+      "name": "Dietary Pudding",
+      "tier": "Rare",
+      "pool": "Testers_orange_color",
+      "description": "thetesters:Splattering no longer drains Gel.",
+      "flavorText": "...probably shouldn't eat this."
+    },
+    {
+      "name": "Disk Operating System",
+      "tier": "Rare",
+      "pool": "Testers_orange_color",
+      "description": "Start each combat with 1 Focus and 1 additional Orb Slot.",
+      "flavorText": "Genetic Lifeform not included."
+    },
+    {
+      "name": "Charred Cube",
+      "tier": "Special",
+      "pool": "Testers_orange_color",
+      "description": "Whenever you thetesters:Splatter, gain 5 Gold.",
+      "flavorText": "You monster."
+    },
+    {
+      "name": "Mask of Founder",
+      "tier": "Special",
+      "pool": "",
+      "description": "Whenever you are debuffed, gain 1 Strength.",
+      "flavorText": "Make life take the lemons back!"
+    },
+    {
+      "name": "Moron Core",
+      "tier": "Special",
+      "pool": "",
+      "description": "At the start of each combat, thetesters:Attach an thetesters:Intelligence_Dampening_Core.",
+      "flavorText": "You might have a very minor case of serious brain damage."
+    },
+    {
+      "name": "Core Bundle",
+      "tier": "Boss",
+      "pool": "Testers_orange_color",
+      "description": "At the start of each combat, gain 3 Orb Slots and thetesters:Attach 3 random Cores.",
+      "flavorText": "A large tangled bundle of cores. Perhaps some of these could be useful?"
+    },
+    {
+      "name": "Gel Pumps",
+      "tier": "Boss",
+      "pool": "Testers_orange_color",
+      "description": "Replaces Gel Canisters. At the start of your turn, gain 2 thetesters:Bounce_Gel and 2 thetesters:Speed_Gel.",
+      "flavorText": "A portable device that fabricates gel, attached to your canisters."
+    },
+    {
+      "name": "Runic Core",
+      "tier": "Boss",
+      "pool": "Testers_orange_color",
+      "description": "Gain [E] at the start of your turn. Whenever you thetesters:Detach or Evoke a Core, lose 3 HP.",
+      "flavorText": "The runes are indecipherable. The technology is ancient, and incompatible with some of your systems."
+    },
+    {
+      "name": "Neurotoxin Vents",
+      "tier": "Shop",
+      "pool": "",
+      "description": "At the start of your turn, apply 3 Poison to ALL enemies.",
+      "flavorText": "If I were you, I'd take a deep breath. And hold it."
+    },
+    {
+      "name": "Randolph the Red-Nosed Turret",
+      "tier": "Shop",
+      "pool": "Testers_orange_color",
+      "description": "Start each combat with 2 Sentry Turrets in your hand.",
+      "flavorText": "Randolph with your nose so bright, won't you guard this room tonight?"
+    }
+  ],
+  "potions": [
+    {
+      "name": "Propulsion Bottle",
+      "rarity": "Common",
+      "description": "Gain 10 Speed Gel."
+    },
+    {
+      "name": "Repulsion Bottle",
+      "rarity": "Common",
+      "description": "Gain 10 Bounce Gel."
+    },
+    {
+      "name": "Bottle of Bullets",
+      "rarity": "Uncommon",
+      "description": "Add 3 Sentry Turrets to your hand, they cost 0 this turn."
+    },
+    {
+      "name": "Volatile Flask",
+      "rarity": "Uncommon",
+      "description": "Splatter 5 times without losing Gel."
+    },
+    {
+      "name": "Canned Core",
+      "rarity": "Rare",
+      "description": "Attach a random Core."
+    }
+  ],
+  "creatures": [
+    {
+      "name": "the Testers",
+      "type": "Player",
+      "minHP": "77",
+      "maxHP": "77"
+    },
+    {
+      "name": "GLaDOS",
+      "type": "Boss",
+      "minHP": "750",
+      "maxHP": "750"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Adventure Core",
+      "description": "Orb: Gain Toughness whenever you draw an Attack. Heals when Evoked."
+    },
+    {
+      "name": "Anger Core",
+      "description": "Orb: Gain Vigor whenever you draw an Attack. When Evoked, gain Strength."
+    },
+    {
+      "name": "Apple Core",
+      "description": "Orb: When Evoked, heal and draw a card."
+    },
+    {
+      "name": "Attach",
+      "description": "Attaching a Core puts it into your first empty slot. If you have no empty slots, your first Core is automatically Evoked to make room."
+    },
+    {
+      "name": "Blank Core",
+      "description": "Orb: Deals damage when Evoked. Evokes when Detached."
+    },
+    {
+      "name": "Blue Core",
+      "description": "Orb: Gain Bounce Gel. When Evoked, Splatter Bounce Gel."
+    },
+    {
+      "name": "Bounce Gel",
+      "description": "Bounce gel enables you to play cards that drain bounce gel, and enables the Splatter action. Bounce gel cards are generally defensive."
+    },
+    {
+      "name": "Core",
+      "description": "Orb."
+    },
+    {
+      "name": "Crazy Core",
+      "description": "Orb: Plays random cards of any color for free. When Evoked, choose a card to play."
+    },
+    {
+      "name": "Curiosity Core",
+      "description": "Orb: Draws cards."
+    },
+    {
+      "name": "Detach",
+      "description": "Remove a Core and put a copy of card that Attaches it into your discard pile. It costs 0 this combat."
+    },
+    {
+      "name": "Drain",
+      "description": "Automatically spend this much gel to activate the following ability, if you have enough gel.\nSpends both types of gel unless specified."
+    },
+    {
+      "name": "Energy Core",
+      "description": "Orb: Gains Energy. When Evoked, gain Focus."
+    },
+    {
+      "name": "Experiment",
+      "description": "This card has Ethereal and Exhaust. When you play this card, gain 1 Focus."
+    },
+    {
+      "name": "Fact Core",
+      "description": "Orb: Gains Block for every Orb Channeled. When Evoked, gain an Orb slot."
+    },
+    {
+      "name": "Gel Core",
+      "description": "Orb: Splatters."
+    },
+    {
+      "name": "Gel Core+",
+      "description": "Orb: Splatters without spending Gel."
+    },
+    {
+      "name": "Intelligence Dampening Core",
+      "description": "Orb: Gains Weak, Frail and Vulnerable."
+    },
+    {
+      "name": "Multiword Keyword",
+      "description": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+    },
+    {
+      "name": "Orange Core",
+      "description": "Orb: Gain Speed Gel. When Evoked, Splatter Speed Gel."
+    },
+    {
+      "name": "Space Core",
+      "description": "Orb: Reduces cost of cards in your hand."
+    },
+    {
+      "name": "Speed Gel",
+      "description": "Speed gel enables you to play cards that drain speed gel, and enables the Splatter action. Speed gel cards are generally offensive."
+    },
+    {
+      "name": "Splatter",
+      "description": "Drain 1 Bounce Gel and Speed Gel. Apply 1 Bouncy and Slippery to ALL enemies."
+    },
+    {
+      "name": "Splatter Bombs",
+      "description": "Whenever you attack this enemy, Splatter without losing gel."
+    },
+    {
+      "name": "Targeted",
+      "description": "Whenever you attack an enemy, all Walking Turrets will target that enemy, and the previous target will lose Targeted. If no enemy is targeted at the end of your turn, a random target will be selected."
+    },
+    {
+      "name": "Toughness",
+      "description": "Gain Block the next time you play an Attack."
+    },
+    {
+      "name": "Thetesters:keyword",
+      "description": "Whenever you play a card, gain 1 dexterity this turn only."
+    },
+    {
+      "name": "Wheatley",
+      "description": "At the start of your turn, gain 1 Weak, Frail or Vulnerable."
+    }
+  ]
+}
