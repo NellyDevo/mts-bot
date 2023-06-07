@@ -180,7 +180,8 @@ If you are in the <#384046138610941953> channel, you can also run it with "rando
 """
     }
 
-client = discord.Client()
+intents = discord.Intents.default()
+client = discord.Client(intents=intents)
 session = aiohttp.ClientSession()
 load_dotenv()
 token = os.getenv("DISCORD_TOKEN")
@@ -1224,4 +1225,8 @@ def update_body_text(discord_message):
 
 
 #start the bot
-client.run(token)
+async def main():
+    async with client:
+        await client.start(token)
+
+asyncio.run(main())
